@@ -9,10 +9,10 @@ from sqlalchemy import create_engine, func
 
 
 ## set up engine and connection
-# engine = create_engine("sqlite:///Resources/hawaii.sqlite")
+engine = create_engine("sqlite:///Resources/hawaii.sqlite")
 
-engine = create_engine("sqlite:///hawaii.sqlite",
-                       connect_args={'check_same_thread': False})
+# hawaii.sqlite moved it to resource folder for organization purposes 
+# engine = create_engine("sqlite:///hawaii.sqlite", connect_args={'check_same_thread': False})
 # conn = engine.connect()
 
 # reflect an existing database into a new model
